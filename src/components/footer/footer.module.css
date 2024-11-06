@@ -1,0 +1,119 @@
+.footer {
+  background-color: var(--three); /* Background color for the footer */
+  color: var(--four); /* Text color */
+  padding: 20px 0; /* Padding around the footer */
+}
+
+.footer_image {
+  background-image: url(../../assets/footer.jpg); /* Background image */
+  background-size: cover; /* Cover the entire area */
+  background-repeat: no-repeat; /* No repetition */
+  height: 30vh; /* Set height */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  color: var(--white); /* Text color in this section */
+  text-align: center; /* Center text */
+}
+
+.footer_image h2,
+.footer_image a {
+  color: var(--white); /* Color for headings and links */
+}
+
+.footer_image a {
+  margin-left: 10px; /* Margin for links */
+  text-decoration: none; /* Underline for links */
+}
+
+.footer_content {
+  padding: 50px 0; /* Padding for footer content */
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); /* Responsive columns */
+  gap: 40px; /* Space between columns */
+}
+
+.footer_content > div {
+  padding: 20px; /* Padding for each footer column */
+}
+
+/* Adjusted logo holder dimensions and alignment */
+.logo_holder {
+  display: flex; /* Flex layout for logo and tagline */
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Space between logo and tagline */
+  width: 100%; /* Full width to align with other content */
+  padding: 0; /* Remove padding to align with other divs */
+  box-sizing: border-box; /* Ensure padding doesn’t affect alignment */
+}
+
+.footer__logo img {
+  width: 100%; /* Ensures the logo image fills the container */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.footer__tagline {
+  margin: 10px 0; /* Reduced margin for a more compact look */
+  font-size: 0.9rem; /* Slightly smaller text size */
+}
+
+.footer__contact,
+.footer__links,
+.footer__social_links {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.footer__contact li,
+.footer__links li,
+.footer__social_links li {
+  cursor: pointer; /* Pointer on hover */
+  margin-bottom: 15px; /* Space between list items */
+}
+
+.footer__contact li a,
+.footer__links li a,
+.footer__social_links li a {
+  color: var(--four); /* Text color for links */
+  text-decoration: none; /* No underline */
+}
+
+.footer__contact li a:hover,
+.footer__links li a:hover,
+.footer__social_links li a:hover {
+  color: var(--white); /* Change color on hover */
+}
+
+.footer__social_links {
+  display: flex; /* Flex layout for social links */
+}
+
+.footer__social_links li {
+  margin-right: 10px; /* Space between icons */
+}
+
+.footer__bar {
+  text-align: center; /* Center text */
+  margin-top: 20px; /* Margin above the bar */
+  color: var(--four); /* Text color */
+}
+
+.footer__bar:hover {
+  color: var(--white); /* Change color on hover */
+}
+
+/* Icons styling */
+.footer_icons i {
+  font-size: 20px; /* Icon size */
+  color: var(--white); /* Icon color */
+}
+
+.footer_icons i:hover {
+  color: var(--four); /* Icon color on hover */
+}
+
+@media (max-width: 380px) {
+  .footer_content {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjust for smaller screens */
+  }
+}
